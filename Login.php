@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <?php
+/* I could have made that in the index but I'm lazy and busy */
 session_start();
 ?>
 <html>
@@ -9,7 +10,8 @@ session_start();
 </head>
 <body>
 <?php
-       include('Config.php');
+	/* connect to the db */
+       include('config.php');
 	   $connect=mysql_connect ($db_host,$db_user,$db_pass);
        mysql_select_db ($db_name);
 
@@ -18,14 +20,16 @@ session_start();
 			    $sqlQuery="select * from members where username='$username' AND pass='$password'";
 				$result=mysql_query($sqlQuery);
 				$number=mysql_num_rows($result);
-                  if($number>0)
+                  if($number>0) /* check if user clames exist */
 			 {
+			  /* ok you're good to login */
                 $_SESSION['id']=mysql_result($result,0,"id");
-                $_SESSION['is_admin']=mysql_result($result,0,"is_admin");
+                $_SESSION['is_admin']=mysql_result($result,0,"is_admin"); /* are you an admin ? */
                 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Control.php');
 				}
 				else
 				{
+					/* if no user with the used passwod then redirect with the get error */
                   header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'index.php?error=1');
                 }
 
