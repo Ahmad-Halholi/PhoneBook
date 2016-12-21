@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php
+/* noraml register code , just check if $_POST not empty then connect and add users , validating errors are added */
 if (!empty($_POST['username']) || !empty($_POST['password']) || !empty($_POST['repeatpass']) || !empty($_POST['email']) ){
 include('config.php');
 $connect=mysql_connect ($db_host,$db_user,$db_pass);
