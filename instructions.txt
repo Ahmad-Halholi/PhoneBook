@@ -11,6 +11,7 @@
 * import database_tabels.sql file and DELETE IT after that !
 * have you deleted the file or not !?
 # You should be ready now .
+* default admin is : root , password : toor .
 * enter the script folder as you've spicified in "config.php" file 
 * explore the script and send me suggestions .
 * you can edit the code easily and you'll find my comments .
