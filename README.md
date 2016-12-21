@@ -1,13 +1,14 @@
 # PhoneBook
 ################################################################################################################
-# WARNING : THIS SCRIPT IS VULNERABLE , SQL INJECTION , XSS , AND ONE LOGICAL ERROR . USE AT YOUR OWN RISK !!
+# WARNING : THIS SCRIPT IS VULNERABLE , Session Hijacking , SQL INJECTION , XSS , AND ONE LOGICAL ERROR . 
+# USE AT YOUR OWN RISK !!
 # Also I didn't maintain sensetive letters case for filenames so this will screw everything up on Linux servers .
 # Yet the script is very simple and easy to fix , I might submit a new version soon .
 # logical error is in file "editor.php" , other users can delete or edit all contacts using the id .
 ################################################################################################################
 
 ################################################################################################################
-#Read instructrions.txt file on how to use .
+# Read instructrions.txt file on how to use .
 ################################################################################################################
 
 /* -- bullshit you don't need --
