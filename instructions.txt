@@ -1,3 +1,5 @@
+# Use AppServ 8.5.0 
+* Download link : http://prdownloads.sourceforge.net/appserv/appserv-win32-8.5.0.exe?download
 # Edit "config.php" file .
 * line 1 : script folder , if not in folder the leave it as '/'
 * line 2 : your host ip or name
