@@ -13,6 +13,7 @@
 /* -- bullshit you don't need --
 just a Simple old styled PHP phonebook script project , using PHP 5 , CSS 3 .
 I've submitted this project for I've not found such when I was requested to create it as a student . 
-I've commetnted on many lines for explination .
+I've commetnted on many lines for explanation purposes .
+This script is yours , do whatever you want .
 */
 
