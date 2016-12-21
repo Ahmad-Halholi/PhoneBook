@@ -11,7 +11,7 @@
 
 <?php
 include "config.php";
-if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
+if(isset($_SESSION['id']) && !empty($_SESSION['id'])) { /* if the user is not holding a session and directly accessed the link he will be redirected */
 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Control.php');
 exit;
 }
