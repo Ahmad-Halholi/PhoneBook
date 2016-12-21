@@ -8,7 +8,7 @@
 <body>
 <?php
 session_start();
-if(!isset($_SESSION["id"]))
+if(!isset($_SESSION["id"])) /* if the user is not holding a session and directly accessed the link he will be redirected */
 {
 include "config.php";
 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'index.php?error=4');
@@ -20,6 +20,7 @@ die("<br><h1>logged to the server ~!</h1><br>");
 <div class="go_back">
 <a href="
 <?php
+/* giving the link fot the icon */
 include "config.php";
 echo 'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Control.php';?>">
 <img src="resourses/images/back.png" alt="Go back">
@@ -29,6 +30,7 @@ Contacts Manager </div>
 </div>
 <table>
 <?php
+   /* connecting to the db and printing the table */
 $connect=mysql_connect ($db_host,$db_user,$db_pass);
 mysql_select_db ($db_name);
 $userid=$_SESSION['id'];
@@ -36,6 +38,7 @@ $query = "SELECT * FROM contacts WHERE user_id='$userid'";
 $result=mysql_query($query);
 $number=mysql_num_rows($result);
 if ($number == 0) {
+    /* if there's no contacts this will be printed */
 echo "<div style='margin:auto; padding-top:110px;font-family:Arial;color:#bfbfbf; font-weight: bold;font-size: 17px;
     text-align:center;width: 550px;
     height: 340px;'>You have no contacts !</div>";}
