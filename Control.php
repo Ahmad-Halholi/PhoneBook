@@ -8,14 +8,14 @@
 </head>
 <body>
 <?php
-if(!isset($_SESSION["id"]))
+if(!isset($_SESSION["id"])) /* if the user is not holding a session and directly accessed the link he will be redirected */
 {
 include "config.php";
 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'index.php?error=4');
 die("<br><h1>logged to the server ~!</h1><br>");}
 ?>
 <?
-if ($_SESSION['is_admin']=="true"){
+if ($_SESSION['is_admin']=="true"){ /* if the user session indicated that he is admin then print the side panel for him */
 include "config.php";
 $statistics='http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Admin/'.'Statistics.php';
 $users='http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Admin/'.'Users.php';
@@ -37,6 +37,7 @@ function closeNav() {
 }
 </script>';
 }
+    /* html code is easy and the php inside just to make sure we got the correct paths */
 ?>
 <section class="control_main">
 <div class="title">Control Panel</div>
