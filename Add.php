@@ -7,15 +7,18 @@
 </head>
 <body>
 <?php
-session_start();
-if(!isset($_SESSION["id"]))
+session_start(); /* you might need to put this at the top of the page for older versions */
+if(!isset($_SESSION["id"])) /* if the user is not holding a session and directly accessed the link he will be redirected */
 {
 include "config.php";
 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'index.php?error=4');
 die("<br><h1>logged to the server ~!</h1><br>");
 }
 if (!empty($_POST['firstname']) || !empty($_POST['secondname']) || !empty($_POST['phonenumber']) || !empty($_POST['email']) )
+
+ /* if $_POST not empty , connect and add the user */
 {
+ /* if there's a contact with the same phone number it will not be added */
 include('config.php');
 $connect=mysql_connect ($db_host,$db_user,$db_pass);
 mysql_select_db($db_name);
@@ -27,17 +30,20 @@ if ($result > 0){
  header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Add.php?error=1');
  die();
 }
+ /* add the user if there's no contact with the same number for that user */
 $firstname=mysql_real_escape_string($_POST['firstname']);
 $secondname=mysql_real_escape_string($_POST['secondname']);
 $email=mysql_real_escape_string($_POST['email']);
 $sqlQuery="insert into contacts values(null,'$firstname' ,'$secondname', '$phonenumber' , '$email' , '$current_user_id')";
 if ($result=mysql_query($sqlQuery)){
 header('Location: '.'http://'.$_SERVER['SERVER_NAME'].$scriptfolder.'Add.php?error=2');
- die(); }
+  }
 
 
 }
-
+/* i've user GET method to retrieve errors from other pages 
+errors are pretty clear and basic .
+*/
 if (!empty($_GET['error'])){
 if ($_GET['error']==1) {
     echo "<script>alert(\"You already have a user with the same number !\")</script>";
@@ -46,10 +52,10 @@ if ($_GET['error']==2) {
     echo "<script>alert(\"Contact has been added successfully \")</script>";
 }
 }
+ /* if you need html explanation then do not continue */
 ?>
 <section class="add_new">
 <div class="upper_title">
-
 <div class="go_back">
 <a href="
 <?php
