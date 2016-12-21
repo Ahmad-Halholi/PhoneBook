@@ -1,0 +1,125 @@
+
+html {
+    background: url(../images/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.register {
+    width: 385px;
+    height: 380px;
+    overflow: hidden;
+    background: #1e1e1e;
+    border-radius: 15px;
+    margin: 80px auto;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.8);
+}
+
+.register .title {
+        width: 383px;
+        height: 22px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 16px;
+        text-align: center;
+        color: #bfbfbf;
+        font-weight: bold;
+        background: #121212;
+        border: #2d2d2d solid 1px;
+        margin-bottom: 13px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        font-family: Arial;
+}
+
+.register form {
+
+       width: 312px;
+       height: auto;
+       overflow: hidden;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.register form input[type=text], .register form input[type=password], .register form input[type=email] {
+    width: 280px;
+    height: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    border: none;
+    color: #bfbfbf;
+    background: #141414;
+    outline: none;
+    margin: 0;
+    font: 14px Arial;
+}
+
+.register form input[type=email] {
+       border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-top: #0b0b0b solid 1px;
+        background: #141414;
+
+
+}
+
+.register form input[name=repeatpass] {
+   border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: #0b0b0b 1px solid;
+    border-bottom: #353535 1px solid;
+    background: #141414;
+}
+
+.register form .submit {
+   width: 300px;
+    height: 52px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    border:none;
+    outline:none;
+    border-top: #4eb2a8 1px solid;
+    border-bottom: #161616 1px solid;
+    background: #349e92;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    font-family:sans-serif;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video , form input[type=submit], input[type=submit] {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for all browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

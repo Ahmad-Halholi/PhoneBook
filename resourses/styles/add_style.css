@@ -1,0 +1,141 @@
+html {
+
+    background: url(../images/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.add_new {
+    text-align: center;
+    z-index: 1;
+    width: 460px;
+    height: 400px;
+    overflow: hidden;
+    background: #1e1e1e;
+    border-radius: 6px;
+    margin: 80px auto;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.8);
+}
+
+.add_new .upper_title {
+    z-index: 1;
+    width: 458px;
+    height: 39px;
+    font-size: 14px;
+    text-align: center;
+    color: #bfbfbf;
+    font-weight: bold;
+    background: #121212;
+    border: #2d2d2d solid 1px;
+    margin-bottom: 15px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    font-family: Arial;
+
+}
+
+ .add_new .title {
+       /*padding-top: 13px;
+    padding-bottom: 13px;*/
+    margin: 13px auto 13px auto;
+     }
+
+.go_back img {
+
+width: 32px;
+height: 32px;
+}
+.go_back  {
+position: absolute;
+margin : 3px 6px 10px 6px;
+float: left;
+}
+
+
+
+
+.add_new form {
+
+    width: 440px;
+    height:330px;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.add_new form input[type=text], .add_new form input[type=email] {
+    width: 280px;
+    height: 30px;
+    font-size: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    border: none;
+    color: #bfbfbf;
+    background: #141414;
+    outline: none;
+    margin: 0;
+}
+
+.add_new form input[name=firstname] {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top: #0b0b0b solid 1px;
+    background: #141414;
+}
+.add_new form input[name=email] {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: #353535 1px solid;
+    background: #141414;
+}
+
+.add_new form .submit {
+    width: 240px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    border:none;
+    outline:none;
+    border-top: #4eb2a8 1px solid;
+    border-bottom: #161616 1px solid;
+    background: #349e92;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+
+    font-family: Arial;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for all browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
