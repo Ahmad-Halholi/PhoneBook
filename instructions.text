@@ -1,0 +1,14 @@
+# Edit "config.php" file .
+* line 1 : script folder , if not in folder the leave it as '/'
+* line 2 : your host ip or name
+* line 3 : your database username
+* line 4 : your database password
+* line 5 : he database name , you can merge into another database if you have the same tables
+# Import the database .
+* create your database as you've named it in the config file 
+* import database_tabels.sql file and DELETE IT after that !
+* have you deleted the file or not !?
+# You should be ready now .
+* enter the script folder as you've spicified in "config.php" file 
+* explore the script and send me suggestions .
+* you can edit the code easily and you'll find my comments .
